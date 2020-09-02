@@ -1,0 +1,18 @@
+{
+  "alphabet": ["a", "b"],
+  "states": [["s0"], ["s2"], ["s5"], ["s2s3s7"], ["s5s6s7"]],
+  "initial_state": "s0",
+  "accepting_states": ["s2s3s7", "s5s6s7"],
+  "transitions": [
+    ["s0", "a", "s2"],
+    ["s0", "b", "s5"],
+    ["s2", "a", "s2s3s7"],
+    ["s2", "b", "s2"],
+    ["s5", "a", "s5"],
+    ["s5", "b", "s5s6s7"],
+    ["s2s3s7", "a", "s2s3s7"],
+    ["s2s3s7", "b", "s2"],
+    ["s5s6s7", "a", "s5"],
+    ["s5s6s7", "b", "s5s6s7"]
+  ]
+}

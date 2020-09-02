@@ -1,0 +1,21 @@
+digraph "Graph" {
+	rankdir=LR size=8
+	fake [style=invisible]
+	fake -> s0 [style=bold]
+	s0 [root=true]
+	node [shape=doublecircle]
+	s7
+	node [shape=circle]
+	s0 -> s2 [label=a]
+	s1 -> s2 [label=a]
+	s2 -> s2 [label=a]
+	s2 -> s3 [label=a]
+	s2 -> s7 [label=a]
+	s5 -> s5 [label=a]
+	s0 -> s5 [label=b]
+	s2 -> s2 [label=b]
+	s4 -> s5 [label=b]
+	s5 -> s5 [label=b]
+	s5 -> s6 [label=b]
+	s5 -> s7 [label=b]
+}

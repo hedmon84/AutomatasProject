@@ -1,0 +1,18 @@
+digraph "Graph" {
+	rankdir=LR size=8
+	fake [style=invisible]
+	fake -> q0 [style=bold]
+	q0 [root=true]
+	node [shape=doublecircle]
+	q4q5q19q7
+	q6q7
+	q27q7
+	q15q7
+	node [shape=circle]
+	q0 -> q2q3q9q10q17q18q21q22 [label=a]
+	q2q3q9q10q17q18q21q22 -> q4q5q19q7 [label=a]
+	q2q3q9q10q17q18q21q22 -> q12q13q24q25 [label=b]
+	q4q5q19q7 -> q6q7 [label=c]
+	q12q13q24q25 -> q27q7 [label=a]
+	q12q13q24q25 -> q15q7 [label=c]
+}
