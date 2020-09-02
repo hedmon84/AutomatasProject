@@ -34,13 +34,9 @@ import re
 # # (a | b )* c | a ( a | b )* c pass
 # a(a|b) pass
 # a(a|b)* pass
-# a(a|b)+
+# a(a|b)+ pass
 # a(a|b) pass
-# a ( a | b )* c | a ( a | b )* c | d ( a | b )* h
-# a(a|b*) falta
-# a(a|b+)* falta
-# a(a|b*)+ falta
-# a(a|b) falta
+# a ( a | b )* c | a ( a | b )* c | d ( a | b )* h pass
 
 
 def re_to_nfa_Ɛ(input: str) -> str:
